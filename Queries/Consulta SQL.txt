@@ -1,0 +1,39 @@
+1.- SELECT 
+  UFO_shape,
+  COUNT(*) AS Sightings
+FROM 
+  `qwiklabs-gcp-04-85b0703cd55b.ovni.avistamientos`
+WHERE 
+  country = 'us'
+GROUP BY 
+  UFO_shape
+ORDER BY 
+  Sightings DESC
+LIMIT 5;
+
+
+2.-
+SELECT 
+  EXTRACT(YEAR FROM DATETIME(Date_time)) AS Year,
+  COUNT(*) AS Sightings
+FROM 
+  `qwiklabs-gcp-04-85b0703cd55b.ovni.avistamientos`
+WHERE 
+  country = 'us'
+GROUP BY 
+  Year
+ORDER BY 
+  Sightings DESC;
+
+3.-
+ SELECT 
+  `state/province` AS State,
+  COUNT(*) AS Sightings
+FROM 
+  `qwiklabs-gcp-04-85b0703cd55b.ovni.avistamientos`
+WHERE 
+  country = 'us'
+GROUP BY 
+  State
+ORDER BY 
+  Sightings DESC;
