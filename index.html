@@ -1,0 +1,290 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Prologue by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css">
+		<style>
+    
+    pre {
+      border-radius: 8px;
+      overflow-x: auto;
+      margin-top: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+  </style>
+		
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<div id="logo">
+						<span class="image"><img src="images/logo-duoc.png" alt=""  /></span>
+						
+					</div>
+					<!-- Logo -->
+						<div id="logo">
+							<h1 id="title">Big Data</h1>
+							<h1 id="title">Sección BIY7131-001D</h1>
+							<h1 id="title">Integrantes:</h1>
+							<div>
+								<h5 id="title">Giovanna Espinosa</h5>
+								<h5 id="title">Diego Palmeiro</h5>
+								<h5 id="title">Valentina Guajardo</h5>
+							</div>
+							
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="#top" id="top-link"><span class="icon solid fa-book-open ">Introducción</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-database">Ingesta de datos</span></a></li>
+								<li><a href="#about" id="about-link"><span class="icon solid fa-broom">Limpieza de datos</span></a></li>
+								<li><a href="#contact" id="contact-link"><span class="icon solid fa-terminal">Consultas SQL</span></a></li>
+								<li><a href="#dashboard" id="contact-link"><span class="icon solid fa-chart-bar">Dashboards</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover" >
+						<div class="container">
+
+							<header>
+								<br>
+								<h2 class="alt">Análisis de avistamientos de <a href="">OVNIS</a> .</h2>
+								<p>Realizamos un análisis de datos sobre avistamientos de OVNIs utilizando herramientas de <br />
+									Google Cloud como BigQuery, DataPrep y Looker Studio.</p>
+							</header>
+
+							<footer>
+								<a href="#portfolio" class="button scrolly">Comenzar</a>
+							</footer>
+
+						</div>
+					</section>
+
+				<!-- Ingesta -->
+					<section id="portfolio" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Ingesta de datos</h2>
+							</header>
+
+							<p>Durante el proceso de ingesta de datos, se comenzó transformando el archivo original en formato Excel a un archivo CSV, 
+								con el objetivo de asegurar la compatibilidad y facilitar su procesamiento en las herramientas de Google Cloud. 
+								A continuación, se creó un bucket en Cloud Storage, donde se almacenó el archivo CSV. Posteriormente, se accedió a 
+								BigQuery para crear un dataset denominado "ovni", el cual serviría como contenedor lógico para organizar y estructurar los datos. 
+								Este flujo permitió establecer una base sólida para la posterior limpieza, análisis y visualización de los datos.</p>
+
+							<div class="row">
+								<div class="" style="width:80%; margin: 0 auto;">
+									<article class="item">
+										<a href="images/bucket.png" class="image" data-fancybox="gallery" data-caption="Creación del bucket" ><img src="images/bucket.png" alt="bucket" style="width:100%;" /></a>
+										<header>
+											<h3>Creación del bucket</h3>
+											<p> Empezamos por crear un bucket con nuestros nombres. La Región utilizada es US.</p>
+										</header>
+									</article>
+									<article class="item">
+										<a href="images/apienable.png" class="image" data-fancybox="gallery" data-caption="Hablitamos las API's" ><img src="images/apienable.png" alt="bucket" style="width:80%; margin: 0 auto;" /></a>
+										<header>
+											<h3>Habilitamos las API's</h3>
+											<p>Para poder proseguir a la siguiente etapa, se nos solicita habilitar las API's.</p>
+										</header>
+									</article>
+								</div>
+								
+								
+							</div>
+
+						</div>
+					</section>
+
+				<!-- Limpieza -->
+					<section id="about" class="three">
+						<div class="container">
+
+							<header>
+								<h2>Limpieza de datos</h2>
+							</header>
+							<p>Una vez almacenados los datos, se realizó una etapa de preparación y limpieza,
+								 identificando valores atípicos, campos vacíos o inconsistencias, y aplicando 
+								 transformaciones necesarias para garantizar la calidad de los datos.</p>
+						</div>
+						<div class="row">
+								<div class="" style="width:80%; margin: 0 auto;">
+									<article class="item">
+										<a href="images/columnas-corregidas.png" class="image" data-fancybox="gallery" data-caption="Columnas Corregidas" ><img src="images/columnas-corregidas.png" alt="bucket" style="width:100%;" /></a>
+										<header>
+											<h3>Limpieza de valores atípicos, nulos y duplicados</h3>
+											<p> En esta etapa utlizamos el metodo de reemplazar los valores por el último valor válido. </p>
+										</header>
+									</article>
+									<article class="item">
+										<a href="images/pasos-limpieza.png" class="image" data-fancybox="gallery" data-caption="Recipe de la limpieza" ><img src="images/pasos-limpieza.png" alt="bucket" style="width:80%; margin: 0 auto;" /></a>
+										<header>
+											<h3>Registro de los pasos de la limpieza</h3>
+											<p>Con este registro podemos ver como fueron tratadas las columnas. Además renombramos las columnas que tuvieran caracteres especiales en el nombre para garantizar que no ocurra un error en los pasos siguientes.</p>
+										</header>
+									</article>
+								</div>
+								
+								
+							</div>
+					</section>
+
+				<!-- Consultas -->
+					<section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Consultas SQL en BigQuery</h2>
+							</header>
+							<p>Con la información ya depurada, se procedió a realizar consultas SQL dentro de BigQuery, extrayendo los principales patrones y tendencias relevantes.</p>
+							
+						</div>
+						
+						<div class="" style="width:80%; margin: 0 auto;">
+							<article class="item">
+										<pre style="text-align: left; font-size: 16px; letter-spacing: 0; width: 100%;"><code class="language-sql" >
+#Primera consulta SQL - TOP 5 Avistamientos según forma
+SELECT UFO_shape,
+COUNT(*) AS Sightings
+FROM qwiklabs-gcp-04-85b0703cd55b.ovni.avistamientos 
+WHERE country = 'us'
+GROUP BY UFO_shape
+ORDER BY Sightings DESC
+LIMIT 5;
+											</code></pre>
+											<header>
+											<h3>1️⃣ Identificar los 5 tipos de avistamientos con más cantidad de apariciones</h3>
+										</header>
+									</article>						
+							
+									<article class="item">
+										<pre style="text-align: left; font-size: 16px; letter-spacing: 0; width: 100%;"><code class="language-sql" >
+#Segunda consulta SQL - Cantidad de avistamientos por año
+SELECT EXTRACT(YEAR FROM DATETIME(Date_time)) AS Year, COUNT(*) AS Sightings
+FROM qwiklabs-gcp-04-85b0703cd55b.ovni.avistamientos
+WHERE country = 'us'
+GROUP BY Year
+ORDER BY Sightings DESC;
+											</code></pre>
+											<header>
+											<h3>2️⃣ Cantidad de avistamientos por año</h3>
+										</header>
+									</article>
+
+									<article class="item">
+										<pre style="text-align: left; font-size: 16px; letter-spacing: 0; width: 100%;"><code class="language-sql" >
+#Tercera consulta SQL - Cantidad de avistamientos según estado en EE.UU
+SELECT `stateProvince` AS State, COUNT(*) AS Sightings
+FROM qwiklabs-gcp-04-85b0703cd55b.ovni.avistamientos
+WHERE country = 'us'
+GROUP BY State
+ORDER BY Sightings DESC;
+											</code></pre>
+											<header>
+											<h3>3️⃣ Cantidad de avistamientos según estado en EE.UU </h3>
+										</header>
+									</article>
+									
+								</div>
+					</section>
+
+				<!-- Footer -->
+					<section id="dashboard" class="three">
+						<div class="container">
+
+							<header>
+								<h2>Dashboards</h2>
+							</header>
+							<p>Finalmente, con los resultados obtenidos, se pasó a la fase de visualización, utilizando herramientas como Looker Studio 
+								para construir dashboards interactivos. Estos tableros permitieron comunicar los hallazgos de forma clara y visual, facilitando 
+								la toma de decisiones informadas por parte de los usuarios finales.</p>
+						</div>
+						<div class="row">
+								<div class="" style="width:80%; margin: 0 auto;">
+									<article class="item">
+										<a href="images/grafico_forma_de_ovni.png" class="image" data-fancybox="gallery" data-caption="Top 5 tipos de avistamientos con más cantidad de apariciones" ><img src="images/grafico_forma_de_ovni.png" alt="bucket" style="width:100%;" /></a>
+										<header>
+											<h3>Top 5 tipos de avistamientos con más cantidad de apariciones</h3>
+											<p> En esta etapa utlizamos el metodo de reemplazar los valores por el último valor válido. </p>
+										</header>
+									</article>
+									<article class="item">
+										<a href="images/grafico_avistamientos_por_año.png" class="image" data-fancybox="gallery" data-caption="Cantidad de avistamientos por año" ><img src="images/grafico_avistamientos_por_año.png" alt="bucket" style="width:80%; margin: 0 auto;" /></a>
+										<header>
+											<h3>Cantidad de avistamientos por año</h3>
+											<p>Con este registro podemos ver como fueron tratadas las columnas. Además renombramos las columnas que tuvieran caracteres especiales en el nombre para garantizar que no ocurra un error en los pasos siguientes.</p>
+										</header>
+									</article>
+									<article class="item">
+										<a href="images/grafico_avistamientos_en_eeuu.png" class="image" data-fancybox="gallery" data-caption="Cantidad de avistamientos según estado en EE.UU" ><img src="images/grafico_avistamientos_en_eeuu.png" alt="bucket" style="width:80%; margin: 0 auto;" /></a>
+										<header>
+											<h3>Cantidad de avistamientos según estado en EE.UU</h3>
+											<p>Con este registro podemos ver como fueron tratadas las columnas. Además renombramos las columnas que tuvieran caracteres especiales en el nombre para garantizar que no ocurra un error en los pasos siguientes.</p>
+										</header>
+									</article>
+								</div>
+								
+								
+							</div>
+					</section>
+			</div>
+
+
+
+
+
+
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<h3>Muchas gracias por llegar hasta aqui 😊</h3>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+ 			<script>hljs.highlightAll();</script>
+
+
+	</body>
+</html>
