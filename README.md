@@ -34,18 +34,18 @@
 > ![image](https://github.com/user-attachments/assets/e1930de3-ff00-466e-adfe-6be8836eea1a)
 
 >Para la preparación de los datos realizamos un Edit Recipe, lo cual nos permitira preparar los datos para su análisis. Al seleccionar el Edit recipe, se nos visualizara los datos de dataset, en el cual podemos encontrar todos los datos organizados en columnas y filas.
-> ![image](https://github.com/user-attachments/assets/10a5892f-849c-44e3-a759-3fe689f01eb0)
->  Los Recipe, nos permite fácilmente poder tratar los datos de forma simple datos como son los missing value, o los miss matching data. Para tratar estos datos se realizo lo siguiente por columna.
- > * Date_time: Replace missing values with the last valid value
- > * state/province: Replace mismatched values with Null, Replace missing values with the las valid value.
- > * Country: Replace missing values with the last valid value.
- > * UFO_Shape: Replace missing values with "unknow"
+![image](https://github.com/user-attachments/assets/860eca20-413e-4169-b056-54ae6138f343)
+>  Los Recipe, nos permite fácilmente poder tratar los datos de forma simple datos como son los missing value, los mismatching data y los datos duplicados y conversion de los datos. Para tratar estos datos se realizo lo siguiente por columna.
+ > * Date_time: Replace missing values with the last valid value.
+ > * state/province: Replace mismatched values with Null, Replace missing values with the las valid value, convert text to lowercase.
+ > * Country: Replace missing values with the last valid value, convert text to lowercase
+ > * UFO_Shape: Replace missing values with "unknown", convert text to lowercase
  > * length_of_encounter_seconds: Delete rows where is missing.
  > * Description: Delete rows where is missing.
  > * Latitude: Delete rows where is missing.
-
+ > * Remove duplicate rows. 
 ![image](https://github.com/user-attachments/assets/42775c34-982a-4142-aff7-b8d71d14756a)
-> Finalmente nos encontramos con un dataset con el tratamiento de nulos y mismatched value el cual se visualiza de la siguiente manera.
+> Finalmente nos encontramos con un dataset con el tratamiento de nulos, mismatched value, duplicacion de datos el cual se visualiza de la siguiente manera.
 >![image3](https://github.com/user-attachments/assets/27e9bd68-1c8a-4cf4-a98a-dc6e1b720db9)
 > Seguidamente ejecutamos las transformaciones realizadas y publicamos este dataset tratado en el dataset creado anteriormente en BigQuery. Se espera a su carga y publicación para seguir con el siguiente paso.
 > ![image5](https://github.com/user-attachments/assets/81743d2e-f57d-48eb-a43d-6535dc8f8698)
