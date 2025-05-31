@@ -9,7 +9,8 @@
 
 > El dataset ufo_sighting, nos presenta datos históricos sobre avistamientos de ovnis, en los datos encontramos información como Fecha y hora, ciudad, estado, país, Forma del ovni, duración del avistamiento en segundos, descripcion, fecha de documentacion, latitud y longitud de la ubicacion del avistamiento. Este dataset posee 11 variables (columnas) y 80333 observaciones (filas).
 
-> A demás lo invitamos a revisar una Page que contiene la informacion  y visualizacion del proceso realizado en este informe. [Page UFO Avistamientos](https://voishimk.github.io/UFO_avistamientos/)
+> A demás lo invitamos a revisar una Page que contiene la informacion  y visualizacion del proceso realizado en este informe.
+>  [Page UFO Avistamientos](https://voishimk.github.io/UFO_avistamientos/)
 ---
 ## Desarrollo 
 > Para el desarrollo de este informe, se utilizó las instancias de Google Cloud Skill Boosts, utilizando el laboratorio GSP823 para poder utilizar las herramientas de Google Cloud Platform.
