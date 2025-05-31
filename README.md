@@ -8,6 +8,8 @@
 > En el presente informe se documenta el proceso de carga, preparación, análisis y visualización de datos referente a los avistamientos de OVNI en  Estados Unidos, para ello utilizamos herramientas de Google Cloud Platform: **Cloud Storage**, **Cloud Dataprep**, **BigQuery** y **Looker Studio**.
 
 > El dataset ufo_sighting, nos presenta datos históricos sobre avistamientos de ovnis, en los datos encontramos información como Fecha y hora, ciudad, estado, país, Forma del ovni, duración del avistamiento en segundos, descripcion, fecha de documentacion, latitud y longitud de la ubicacion del avistamiento. Este dataset posee 11 variables (columnas) y 80333 observaciones (filas).
+
+> A demás lo invitamos a revisar una Page que contiene la informacion  y visualizacion del proceso realizado en este informe. [Page UFO Avistamientos](https://voishimk.github.io/UFO_avistamientos/)
 ---
 ## Desarrollo 
 > Para el desarrollo de este informe, se utilizó las instancias de Google Cloud Skill Boosts, utilizando el laboratorio GSP823 para poder utilizar las herramientas de Google Cloud Platform.
@@ -139,6 +141,16 @@ Se ejecutan las Consultas y observamos los resultados obtenidos en cada una.
 ![3](https://github.com/user-attachments/assets/1709b8e7-d105-498e-89d8-206b66a75c1c)
 
 > Este gráfico nos muestra de manera geografica, los avistamientos en EEUU , siendo el estado de california el que mas observaciones registra con 10127 casos seguido de Washingtoncon 4429 casos, seguido de otros estados los cuales tienen menor cantidad de avistamientos, los cuales se distribuyen en las provincias de EEUU.
+
+
+> Para una mejor experiencia se realizo un dashboard interactivo en looker studio, con los resultados de las consultas.
+![image](https://github.com/user-attachments/assets/9da76d0e-3014-45b9-a47b-c447c634b9ab)
+>
+> [Dashboard  en Page](https://voishimk.github.io/UFO_avistamientos/#dashboard)
+> 
+> [Informe en Looker Studio](https://lookerstudio.google.com/reporting/f1d002ce-6938-4780-b0fd-f56e08acaa31)
+
+
 ---
 
 ## Conclusión   
