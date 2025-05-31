@@ -44,10 +44,14 @@
  > * Description: Delete rows where is missing.
  > * Latitude: Delete rows where is missing.
  > * Remove duplicate rows.
- ![image](https://github.com/user-attachments/assets/860eca20-413e-4169-b056-54ae6138f343)
-> Finalmente nos encontramos con un dataset con el tratamiento de nulos, mismatched value, duplicacion de datos el cual se visualiza de la siguiente manera.
->![image3](https://github.com/user-attachments/assets/27e9bd68-1c8a-4cf4-a98a-dc6e1b720db9)
-> Seguidamente ejecutamos las transformaciones realizadas y publicamos este dataset tratado en el dataset creado anteriormente en BigQuery. Se espera a su carga y publicación para seguir con el siguiente paso.
+
+![image](https://github.com/user-attachments/assets/860eca20-413e-4169-b056-54ae6138f343)
+
+Finalmente nos encontramos con un dataset con el tratamiento de nulos, mismatched value, duplicacion de datos el cual se visualiza de la siguiente manera.
+
+![image3](https://github.com/user-attachments/assets/27e9bd68-1c8a-4cf4-a98a-dc6e1b720db9)
+
+Seguidamente ejecutamos las transformaciones realizadas y publicamos este dataset tratado en el dataset creado anteriormente en BigQuery. Se espera a su carga y publicación para seguir con el siguiente paso.
 > ![image5](https://github.com/user-attachments/assets/81743d2e-f57d-48eb-a43d-6535dc8f8698)
 
 #### Big Query
